@@ -12,7 +12,7 @@ func (l Level) String() string {
 	str := "INFO"
 	switch l {
 	case WARNING:
-		str = "WANING"
+		str = "WARNING"
 	case ERROR:
 		str = "ERROR"
 	}
