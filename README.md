@@ -69,8 +69,6 @@
 | filter WARNING and ERROR | Позитивный | `entries = [INFO, WARNING, ERROR]` | `filtered = [WARNING, ERROR]` |
 | logger attestation | Позитивный | `entries = [INFO, WARNING, ERROR], timestamps = [2024-02-17T15:00:00Z, 2024-02-17T16:00:00Z, 2024-02-17T17:00:00Z]` | `filtered = [WARNING, ERROR], json соответствует ожидаемому`, `err = nil` |
 
-Вот отредактированная версия таблиц с обёрнутыми в backticks ячейками, содержащими код:
-
 | CollapseDuplicates | Входные данные (logs) | from | to | Ожидаемый результат | Ожидаемая ошибка |
 |-----------------------------|------------------------|------|----|----------------------|------------------|
 | неправильный диапазон | `[{“test”, INFO, fixedTime}]` | `fixedTime + 1ч` | `fixedTime` | `nil` | `"from >= to!"` |
