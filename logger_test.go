@@ -8,7 +8,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// Блочные тесты
 
 func TestNewLogEntry(t *testing.T) {
 	tests := []struct {
@@ -65,7 +64,6 @@ func TestLoggerMarshalJSON(t *testing.T) {
 	}
 }
 
-// Интеграционный тест
 func TestLoggerIntegrationAddAndFilterEntries(t *testing.T) {
 	logger := NewLogger()
 
@@ -88,7 +86,6 @@ func TestLoggerIntegrationAddAndFilterEntries(t *testing.T) {
 	assert.Equal(t, "error log message", filtered[1].message)
 }
 
-// Аттестационный тест
 func TestLoggerAttestation(t *testing.T) {
 	logger := NewLogger()
 
